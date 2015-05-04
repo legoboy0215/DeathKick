@@ -2,7 +2,9 @@
 namespace Sean_M\DeathKick;
 
 use pocketmine\event\Listener;
+use pocketmine\player\kick;
 use pocketmine\plugin\PluginBase;
+use pocketmine\PlayerDeathEvent;
 
 class Main extends PluginBase implements Listener{
 

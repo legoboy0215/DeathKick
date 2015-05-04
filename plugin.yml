@@ -1,0 +1,6 @@
+name: DeathKick
+main: Sean_M\DeathKick\Main
+version: "1.0.0"
+api: [1.0.0]
+description: Kicks a player upon death.
+author: Sean_M

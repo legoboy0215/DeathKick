@@ -19,4 +19,5 @@ class Main extends PluginBase implements Listener{
        if($p instanceof Player){
        $p->kick($reason="You have died!");
        }
+   }
 }

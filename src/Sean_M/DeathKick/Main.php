@@ -16,8 +16,7 @@ class Main extends PluginBase implements Listener{
      public function onPlayerDeath(PlayerDeathEvent $event){
           $p = $event->getEntity();
           $m = $event->getDeathMessage();
-            if($p instanceof Player){
-               $p->kick($m);
-          }
+            $p->kick($m);
      }
 }
+

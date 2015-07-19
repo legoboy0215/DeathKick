@@ -18,7 +18,8 @@ class Main extends PluginBase implements Listener{
      public function onEnable(){
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
           $this->saveDefaultConfig();
-          $tempconf = $this->getConfig();
+          $death = $tempconf->get('death');
+          $status = $death['status'];
           $this->getLogger()->info("DeathKick enabled!");
      }
  

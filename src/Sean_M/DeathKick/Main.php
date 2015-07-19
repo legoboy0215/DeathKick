@@ -18,14 +18,14 @@ class Main extends PluginBase implements Listener{
      public function onEnable(){
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
           $this->saveDefaultConfig();
-          $death = $tempconf->get('death');
-          $status = $death['status'];
-          $this->getLogger()->info("DeathKick enabled!");
+            $death = $tempconf->get('death');
+            $status = $death['status'];
+              $this->getLogger()->info("DeathKick enabled!");
      }
  
      public function onPlayerDeath(PlayerDeathEvent $event){
-          $p = $event->getEntity();
-          $m = $event->getDeathMessage();
-            $p->kick($m);
+        if($this->settings['message'][You died!]){
+        $p = $event->getEntity();
+          $p->kick($this->settings['message'][You died!]);
      }
 }

@@ -1,4 +1,4 @@
 # DeathKick
-Second code; kicks a player upon death.
+First config test; kicks a player upon death; message editable
 
-[Ignore] Helpers: Lambo (config).
+Helpers: Lambo (config).

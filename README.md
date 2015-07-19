@@ -1,4 +1,4 @@
 # DeathKick
-First config test; kicks a player upon death; message editable
+First config test; Kicks a player upon death; Message editable
 
 Helpers: Lambo (config).

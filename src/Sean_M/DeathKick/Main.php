@@ -26,6 +26,6 @@ class Main extends PluginBase implements Listener{
      public function onPlayerDeath(PlayerDeathEvent $event){
         $p = $event->getEntity();
           $p->ban($this->settings['message'][That Death :(!]);
-          $this->owner->getServer()->broadcastMessage($p->getName(). "Has been banned. Reason Death!");
+          $this->getServer()->broadcastMessage($p->getName(). "Has been banned. Reason Death!");
      }
 }

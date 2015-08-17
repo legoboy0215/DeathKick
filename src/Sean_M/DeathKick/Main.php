@@ -25,6 +25,6 @@ class Main extends PluginBase implements Listener{
  
      public function onPlayerDeath(PlayerDeathEvent $event){
         $p = $event->getEntity();
-          $p->kick($this->settings['message'][You died!]);
+          $p->ban($this->settings['message'][That Death :(!]);
      }
 }
